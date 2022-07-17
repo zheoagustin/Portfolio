@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Nanum+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body {
+    width: 100%;
+}
+.header {
+    height: 100vh;
+    background:rgb(149, 0, 104);    
+    width: 100%;
+    overflow: hidden;
+}
+.navBar {
+    display: flex;
+    width: 95%;
+    position: fixed;
+    background:inherit;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background: rgb(125,0,90);
+
+    
+
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+
+
+}
+.line {
+    height: px;
+    background: black;
+    width: 300px;
+    border-top: 1px solid black;
+    margin-top: 10px;
+}
+.navList li {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: flex-end;
+
+}
+.navList li a{
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    color: black;
+}
+.navList li a:hover {
+    background:rgb(160, 160, 160) ;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+
+
+}
+.main i {
+    font-size: 400px;
+    color: rgb(0, 0, 0);
+    align-self: end;
+}
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: space-around;
+}
+.leftSide h1 {
+    padding: 20px 20px 20px 20px;
+    font-size: 100px;
+    margin-left: 100px;
+    right: 0;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+h1 b {
+    color: rgb(3, 3, 3);
+    font-size: 100px;
+}
+.leftSide p {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    text-align: end;
+
+}
+.leftSide i {
+    font-size: 15px;
+}
+.btnCv{
+    width: 200px;
+    align-self: end;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background: rgb(112, 0, 88);
+    margin-right: 100px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+    transition: 0.5s;
+}
+.btnCv a {
+    color: black ;
+    text-decoration: none;
+}
+.btnCv:hover {
+    background: rgb(75, 0, 59);
+    cursor: pointer;
+    color: rgb(202, 202, 202);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+}
+.projects {
+    height: 100vh;
+    /*background:linear-gradient(to right bottom,rgb(0, 0, 0),rgb(19, 19, 19) ) ;*/
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.designSide {
+    color: rgb(210, 210, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-arround;
+    width: 100%;
+}
+.designSide i {
+    transition: 2s;
+    font-size: 250px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.designSide i:hover {
+color: rgb(109, 109, 109);
+transition: 2s;
+
+}
+.designSide h2 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(210, 210, 210);
+
+}
+
+
+.aboutMe {
+    height: 100vh;
+    background:rgb(149, 0, 104);    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.aboutMeLeftSide {
+    display: flex;    
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+    width: 50vw;
+}
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas: "top top top"
+                         "a2 a3 a4"
+                         "a5 a6 a7";
+    grid-template-rows: 30vh 30vh;
+    place-items: center;    
+    font-size:100px ;          
+}
+.aptitudes {
+    align-items: end;
+}
+.aboutMeLeftSide p {
+    font-size: 25px;
+    text-align: center;
+}
+.aboutMeLeftSide h2 {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif; 
+
+}
+.topCards {
+    align-self: end;
+    grid-column-start: "a2";
+    grid-column-end: "a4";
+    border-top: 2px solid black;
+    border-radius: 20px;
+    border-bottom: 2px solid black;
+
+
+}
+.topCards i {
+    padding: 20px;    
+}
+.bottomCards {
+    align-self: start;
+    grid-area: "a5 a6 a7";
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    border-top: 2px solid black;
+    margin-top: 10px;
+
+}
+.bottomCards i {
+    padding:20px;
+}
+.aboutMeRightSide {}
+
+
